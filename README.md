@@ -10,7 +10,7 @@ https://github.com/maxmyk/software_architecture_microservices/tree/micro_basics
 ## Screenshots
 POST/GET requests with several messages and responses to them, and the contents of the console of each microservice.
 
-![screenshot](https://github.com/maxmyk/software_architecture_microservices/tree/micro_basics/screenshot.png?raw=true)
+![screenshot](https://github.com/maxmyk/software_architecture_microservices/blob/micro_basics/screenshot.png?raw=true)
 
 ### Prerequisites
 
