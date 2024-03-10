@@ -1,16 +1,7 @@
-# tester.py
+# tester_get_only.py
 import requests
 
 facade_url = "http://localhost:5000"
-
-def test_post_request(msg):
-    response = requests.post(f"{facade_url}/post", json={"msg": msg})
-    data = response.json()
-    
-    print("POST Request:")
-    print(f"Response Code: {response.status_code}")
-    print(f"UUID: {data['UUID']}")
-    print(f"Message: {data['msg']}\n")
 
 def test_get_request():
     response = requests.get(f"{facade_url}/get")
@@ -22,6 +13,4 @@ def test_get_request():
     print(f"Messages Service Response: {data['messages_service']}\n")
 
 if __name__ == "__main__":
-    for i in range(10):
-        test_post_request(f"msg{i+1}")
     test_get_request()
